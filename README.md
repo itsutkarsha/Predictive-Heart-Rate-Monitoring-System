@@ -6,10 +6,15 @@ What sets this system apart is the tight coupling of real-time IoT hardware with
 By combining real-time sensing with predictive analytics, this system serves not only as a continuous health monitor but also as an intelligent assistant for early cardiovascular disease detection, offering a powerful tool for both individuals and healthcare providers.
 
 🛠️ Key Features
+
 ✅ Real-time monitoring of Heart Rate and SpO₂
+
 ✅ Live data display on OLED screen
+
 ✅ Cloud-based remote monitoring via ThingSpeak
+
 ✅ Machine Learning models trained on medical data
+
 ✅ Web interface for heart disease prediction
 
 
