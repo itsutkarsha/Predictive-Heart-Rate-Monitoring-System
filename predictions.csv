@@ -1,0 +1,14 @@
+age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,spo2,Prediction,
+Utkarsha,57,0,1,130,222,1,1,140,1,1,1,1,1,99,The patient is predicted NOT to have heart disease.
+aryan,56,1,3,111,212,1,0,120,0,2,1,2,2,90,The patient is predicted to have heart disease.
+Ojas,45,1,1,130,222,1,1,130,0,2,1,2,1,99,The patient is predicted NOT to have heart disease.
+Samiksha,67,0,2,140,222,1,2,160,0,2,2,3,2,90,The patient is predicted to have heart disease.
+anushka,65,0,1,150,249,1,2,137,1,2,2,1,1,90,The patient is predicted to have heart disease.
+mansi,89,78,0,130,230,1,1,179,0,2,1,2,1,99,The patient is predicted NOT to have heart disease.
+akash,67,1,1,150,222,1,2,150,1,1.2,1,1,1,99,The patient is predicted NOT to have heart disease.
+anushka,78,0,1,130,222,1,0,150,1,1,0,1,1,99,The patient is predicted NOT to have heart disease.
+ram,55,1,2,130,222,1,0,150,1,1,0,2,2,90,The patient is predicted NOT to have heart disease.
+dhruv,19,1,2,120,200,1,0,130,1,1.2,2,2,1,98,The patient is predicted NOT to have heart disease.
+Arnav,45,1,0,120,222,1,0,130,1,1,0,1,1,99,The patient is predicted NOT to have heart disease.
+Arnav,45,1,0,120,222,1,0,130,1,1,0,1,1,99,The patient is predicted NOT to have heart disease.
+MOHAK,18,1,0,133,220,1,0,130,1,1.6,1,2,1,99,The patient is predicted NOT to have heart disease.
