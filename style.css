@@ -1,0 +1,97 @@
+/* Resetting some defaults */
+body, h1, h2, h3, p, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body background */
+body {
+    background-color: #f0f4f8; /* Light grey background */
+    color: #333; /* Dark text for readability */
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh;
+}
+
+/* Centered Heading */
+h1 {
+    font-size: 4rem;
+    color: rgb(9, 1, 24);
+    text-align: center;
+    margin-bottom: 20px; /* Space between the title and the form */
+}
+
+/* Form container */
+form {
+    background-color: #a8f1f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Input fields and labels styling */
+label {
+    font-size: 1.1rem;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #007BFF; /* Blue color on focus */
+    outline: none;
+}
+
+/* Small text for instructions */
+small {
+    font-size: 0.9rem;
+    color: #5f5e5e;
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #004085;
+}
+
+/* Centered Prediction Text */
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #053cb4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
