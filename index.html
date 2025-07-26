@@ -1,0 +1,123 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h2>Heart Disease Prediction</h2>
+    <form action="/predict" method="post">
+        <label>Age: <input type="number" name="age" required></label><br>
+        <label>Sex (1=Male, 0=Female): <input type="number" name="sex" required></label><br>
+        <label>Chest Pain Type (0-3): <input type="number" name="cp" required></label><br>
+        <label>Resting Blood Pressure: <input type="number" name="trestbps" required></label><br>
+        <label>Cholesterol: <input type="number" name="chol" required></label><br>
+        <label>Fasting Blood Sugar (1=True, 0=False): <input type="number" name="fbs" required></label><br>
+        <label>Resting ECG (0-2): <input type="number" name="restecg" required></label><br>
+        <label>Max Heart Rate: <input type="number" name="thalach" required></label><br>
+        <label>Exercise Induced Angina (1=Yes, 0=No): <input type="number" name="exang" required></label><br>
+        <label>ST Depression: <input type="number" name="oldpeak" required step="0.1"></label><br>
+        <label>Slope (0-2): <input type="number" name="slope" required></label><br>
+        <label>Major Vessels (0-3): <input type="number" name="ca" required></label><br>
+        <label>Thalassemia (1=Normal, 2=Fixed, 3=Reversible): <input type="number" name="thal" required></label><br>
+        <label>SpO2: <input type="number" name="spo2" required step="0.1"></label><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Heart Disease Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    
+        <label>Age: <input type="number" name="age" required> 
+            <small>(Enter age in years, e.g., 45)</small>
+        </label><br>
+
+        
+        <label>Sex: <input type="number" name="sex" required>
+            <small>(1 = Male, 0 = Female)</small>
+        </label><br>
+
+        
+        <label>Chest Pain Type: <input type="number" name="cp" required> 
+            <small>(0 = Typical angina, 1 = Atypical angina, 2 = Non-anginal pain, 3 = Asymptomatic)</small>
+        </label><br>
+
+        
+        <label>Resting Blood Pressure: <input type="number" name="trestbps" required> 
+            <small>(Enter resting blood pressure in mm Hg, e.g., 130)</small>
+        </label><br>
+
+        
+        <label>Cholesterol: <input type="number" name="chol" required> 
+            <small>(Enter serum cholesterol in mg/dL, e.g., 220)</small>
+        </label><br>
+
+        
+        <label>Fasting Blood Sugar: <input type="number" name="fbs" required> 
+            <small>(1 = True if > 120 mg/dL, 0 = False)</small>
+        </label><br>
+
+        
+        <label>Resting ECG: <input type="number" name="restecg" required> 
+            <small>(0 = Normal, 1 = ST-T wave abnormality, 2 = Left ventricular hypertrophy)</small>
+        </label><br>
+
+        
+        <label>Max Heart Rate: <input type="number" name="thalach" required> 
+            <small>(Enter maximum heart rate achieved, e.g., 150)</small>
+        </label><br>
+
+        
+        <label>Exercise Induced Angina: <input type="number" name="exang" required> 
+            <small>(1 = Yes, 0 = No)</small>
+        </label><br>
+
+        
+        <label>ST Depression: <input type="number" name="oldpeak" required step="0.1"> 
+            <small>(Enter ST depression induced by exercise, e.g., 1.4)</small>
+        </label><br>
+
+        
+        <label>Slope: <input type="number" name="slope" required> 
+            <small>(0 = Upsloping, 1 = Flat, 2 = Downsloping)</small>
+        </label><br>
+
+        
+        <label>Major Vessels: <input type="number" name="ca" required> 
+            <small>(Number of major vessels (0-3) colored by fluoroscopy)</small>
+        </label><br>
+
+        
+        <label>Thalassemia: <input type="number" name="thal" required> 
+            <small>(1 = Normal, 2 = Fixed defect, 3 = Reversible defect)</small>
+        </label><br>
+
+        
+        <label>SpO2: <input type="number" name="spo2" required step="0.1"> 
+            <small>(Enter SpO2 percentage, e.g., 95.5)</small>
+        </label><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
+
